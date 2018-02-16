@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PathFinder Society Card</string>
+    <string name="logo_desc">Explore Report Cooperate</string>
+    <string name="image_desc">PathFinder Background</string>
+    <string name="inspirational_quote">Join the fight!</string>
+    <string name="site">www.paizo.com/pathfinderSociety</string>
+    <string name="name">PathFinder Society</string>
+    <string name="address">10 Foreign Quarter St\nAbsalom\nMI</string>
+    <string name="phone_number">123–456–7890</string>
+</resources>

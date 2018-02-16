@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollViewID"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.pathfindersocietycard.MainActivity">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/Background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha=".90"
+                android:contentDescription="@string/image_desc"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/path_society_back" />
+
+            <ImageView
+                android:id="@+id/Logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:alpha=".80"
+                android:contentDescription="@string/logo_desc"
+                android:scaleType="fitEnd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/path_society_symbol" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/Address"
+                android:text="@string/name"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Name"
+                android:layout_centerHorizontal="true"
+                android:autoLink="map"
+                android:drawableStart="@android:drawable/ic_menu_mylocation"
+                android:padding="8dp"
+                android:text="@string/address" />
+
+            <TextView
+                android:id="@+id/Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/Address"
+                android:layout_below="@id/Address"
+                android:autoLink="phone"
+                android:drawableStart="@android:drawable/ic_menu_call"
+                android:padding="8dp"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:id="@+id/Site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/Address"
+                android:layout_below="@id/Phone"
+                android:autoLink="web"
+                android:padding="8dp"
+                android:text="@string/site" />
+
+            <TextView
+                android:id="@+id/InspirationalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/Address"
+                android:layout_below="@id/Site"
+                android:fontFamily="@font/alegreya_sc"
+                android:padding="8dp"
+                android:text="@string/inspirational_quote"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
