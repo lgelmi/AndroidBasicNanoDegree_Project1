@@ -50,7 +50,7 @@
                 android:id="@+id/Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/Address"
+                android:layout_centerHorizontal="true"
                 android:text="@string/name"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -64,7 +64,8 @@
                 android:autoLink="map"
                 android:drawableStart="@android:drawable/ic_menu_mylocation"
                 android:padding="8dp"
-                android:text="@string/address" />
+                android:text="@string/address"
+                android:textColorLink="#1565C0" />
 
             <TextView
                 android:id="@+id/Phone"
@@ -75,7 +76,8 @@
                 android:autoLink="phone"
                 android:drawableStart="@android:drawable/ic_menu_call"
                 android:padding="8dp"
-                android:text="@string/phone_number" />
+                android:text="@string/phone_number"
+                android:textColorLink="#1565C0" />
 
             <TextView
                 android:id="@+id/Site"
@@ -85,13 +87,14 @@
                 android:layout_below="@id/Phone"
                 android:autoLink="web"
                 android:padding="8dp"
-                android:text="@string/site" />
+                android:text="@string/site"
+                android:textColorLink="#1565C0" />
 
             <TextView
                 android:id="@+id/InspirationalText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@id/Address"
+                android:layout_alignStart="@id/Name"
                 android:layout_below="@id/Site"
                 android:fontFamily="@font/alegreya_sc"
                 android:padding="8dp"
