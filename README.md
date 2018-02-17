@@ -9,7 +9,7 @@ The main features are:
 * I changed the app icon
 * I removed the action bar (that doesn't actually have any purpose in this case)
 * I associated drawables with some TextView to identify their purpose. 
-* I autolinked what I could.
+* I autolinked what I could (which doesn't mean they point to anything real though :smirk:).
 
 
 
